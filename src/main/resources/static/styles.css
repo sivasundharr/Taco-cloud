@@ -1,0 +1,23 @@
+.btn{
+    padding:1em;
+    border:none;
+    outline:none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-style: bolder;
+    margin-top:1.2em;
+    color:white;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+.btn-submit{
+    background-color: dodgerblue;
+}
+
+.validationError{
+    color:red;
+    font-style: bold;
+}
