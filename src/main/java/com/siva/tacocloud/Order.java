@@ -2,7 +2,9 @@ package com.siva.tacocloud;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Pattern;
@@ -39,4 +41,10 @@ public class Order {
     private String ccCVV;
     
     private Date createdAt;
+
+    private List<Taco> tacos = new ArrayList<>();
+
+    public void addTacoDesign(Taco design){
+        this.tacos.add(design);
+    }
 }
